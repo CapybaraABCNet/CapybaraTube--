@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный Сервис</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #282828;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .track-card {
+            background-color: #333333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .track-card:hover {
+            transform: scale(1.05);
+        }
+        .track-image {
+            width: 100%;
+            height: auto;
+        }
+        .track-info {
+            padding: 15px;
+        }
+        .track-title {
+            font-size: 18px;
+            margin: 0 0 5px;
+        }
+        .track-artist {
+            font-size: 14px;
+            color: #aaaaaa;
+        }
+        footer {
+            padding: 20px;
+            background-color: #282828;
+            text-align: center;
+            width: 100%;
+        }
+                .m {
+    color:rgb(29, 28, 28);
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+    
+}
+.w {
+    color:rgb(255, 255, 255);
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+@keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        img {
+            width: 350px; /* Ширина изображения */
+            border-radius: 15px; /* Сглаженные углы для изображения */
+            opacity: 0;
+            animation: imageFadeIn 2s forwards;
+            display: block; /* Отображение изображения как блочного элемента */
+            margin: 20px auto; /* Центрирование изображения */
+        }
+
+        @keyframes imageFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="w">CapybaraTube</h1>
+</header>
+<h1 class="w">Привет! Это CapybaraTube тут есть видео с капиарами и т.д., Хорошего пользования!</h1>
+<h2 class="w">Видео</h2>
+<h3 class="w">Эдит с капибарами</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5190764544707806982.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">Капибара моется</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5190764544707806975 (1).mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">капибара в полиции</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5458871693407711370.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">Капибара в ванне</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5310129966560604379.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">Смешное видео с капибарой</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5458871693407711364.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">Капибара играет на гитаре</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5458871693407711363.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">смешное видео с капибарой в ванне</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5456130164243067251.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">Капибара в зоопарке</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5458871693407711360.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">Капибара с лабубой</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5458871693407711369.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    <h3 class="w">Капибара ИИ</h3>
+    <video id="video-player-3" controls>
+        <source src="document_5458871693407711365.mp4" type="video/mp4">
+        <p class="w">(коммент вы можете поставить в конце сайта)</p>
+        Ваш браузер не поддерживает видео.
+    </video>
+    
+
+    <h1 class="w">Комментарии</h1>
+
+<div class="container">
+
+    <p id="result"></p>
+    
+    <input type="text" id="inputField">
+    <button onclick="submitInput()">Отправить</button>
+</div>
+
+
+<script>
+    function submitInput() {
+        const inputValue = document.getElementById("inputField").value; // Получаем значение из поля ввода
+        document.getElementById("result").textContent = inputValue; // Отображаем результат
+    }
+</script>
+
+</body>
+</html>
